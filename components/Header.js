@@ -1,33 +1,26 @@
 import React from 'react';
-import {
-    StyleSheet,
-    Text,
-    View
-} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+
+import TitleText from './TitleText';
+import Colors from '../constants/colors';
 
 const Header = props => {
-    return (
-        <View style={styles.Header}>
-            <Text style={styles.headerTitle}>{props.title}</Text>
-        </View>
-    )
-}
+  return (
+    <View style={styles.header}>
+      <TitleText>{props.title}</TitleText>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-    Header: {
-        width:'100%',
-        height: 90,
-        backgroundColor: "#1c2773",
-        paddingTop: 36,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    headerTitle: {
-        color:'white',
-        fontSize: 20,
-        letterSpacing:1,
-        textTransform: 'uppercase'
-    }
-})
+  header: {
+    width: '100%',
+    height: 90,
+    paddingTop: 36,
+    backgroundColor: Colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+});
 
 export default Header;

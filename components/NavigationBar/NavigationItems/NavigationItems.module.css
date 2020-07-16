@@ -1,0 +1,11 @@
+.NavigationItems{
+    background-color: white;
+    flex-direction: row;
+    height:100%;
+    width: 21%;
+    float: left;
+    margin-left: 0;
+    position: fixed;
+
+}
+

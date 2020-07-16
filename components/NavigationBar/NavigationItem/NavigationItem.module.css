@@ -1,0 +1,32 @@
+.NavigationItem{
+    text-align:left;
+    
+    
+}
+
+.NavigationItem ul{
+    flex-direction: row;
+    margin-top: 80%;
+    list-style: none;
+}
+
+.NavigationItem li{
+    padding: 3.5%;
+    padding-left: 20%;
+}
+
+.NavigationItem li a:link,
+.NavigationItem li a:visited{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+    padding: 4px 0;
+    font-weight: 500;
+
+}
+
+.NavigationItem li a:hover,
+.NavigationItem li a:active{
+    border-bottom: 2px solid #7b3b75;
+}
